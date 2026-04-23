@@ -42,7 +42,7 @@ const AdminRoute = ({ children }) => {
   }
   
   // Redirect to home if not authenticated or not admin
-  if (!backendUser || backendUser.role !== 'admin') {
+  if (!backendUser || backendUser.role !== 'admin') { 
     console.warn('Admin access denied: User is not authenticated or not an admin')
     return <Navigate to="/" replace />
   }
