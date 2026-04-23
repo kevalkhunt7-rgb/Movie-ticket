@@ -40,7 +40,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:3000",
-  'https://movie-ticket-2ort26a6t-kevalkhunt7-5969s-projects.vercel.app/'
+  'https://movie-ticket-2ort26a6t-kevalkhunt7-5969s-projects.vercel.app'
 ].filter(Boolean);
 
 // Express CORS for API routes
