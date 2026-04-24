@@ -71,6 +71,8 @@ export const movieAPI = {
   getMyFavorites: () => api.get('/movies/favorites/my')
 };
 
+console.log(movieAPI,"movieAPI")
+
 // Show APIs
 export const showAPI = {
   getAllShows: (params) => api.get('/shows', { params }),
