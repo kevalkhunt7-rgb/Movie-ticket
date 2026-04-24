@@ -108,4 +108,11 @@ export const ticketAPI = {
   verifyTicket: (qrData) => api.post('/tickets/verify', { qrData })
 };
 
+// Hero APIs
+export const heroAPI = {
+  getHeroSettings: () => api.get('/hero'),
+  updateHeroSettings: (data) => api.put('/hero', data),
+  getMoviesForSlider: () => api.get('/hero/movies')
+};
+
 export default api;

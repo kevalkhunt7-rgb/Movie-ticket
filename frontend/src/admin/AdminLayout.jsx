@@ -9,7 +9,8 @@ import {
   LogOut,
   Menu,
   X,
-  ChevronRight
+  ChevronRight,
+  Image
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import toast from 'react-hot-toast'
@@ -26,6 +27,7 @@ const AdminLayout = () => {
     { path: '/admin/shows', label: 'Shows', icon: Calendar },
     { path: '/admin/bookings', label: 'Bookings', icon: Ticket },
     { path: '/admin/users', label: 'Users', icon: Users },
+    { path: '/admin/hero-settings', label: 'Hero Settings', icon: Image },
   ]
 
   const handleLogout = () => {

@@ -22,6 +22,7 @@ import AdminMovies from './admin/AdminMovies'
 import AdminShows from './admin/AdminShows'
 import AdminBookings from './admin/AdminBookings'
 import AdminUsers from './admin/AdminUsers'
+import AdminHeroSettings from './admin/AdminHeroSettings'
 import MovieForm from './admin/MovieForm'
 import ShowForm from './admin/ShowForm'
 
@@ -90,6 +91,7 @@ const App = () => {
           <Route path='shows/edit/:id' element={<ShowForm />} />
           <Route path='bookings' element={<AdminBookings />} />
           <Route path='users' element={<AdminUsers />} />
+          <Route path='hero-settings' element={<AdminHeroSettings />} />
         </Route>
       </Routes>
       {!isAdminRoute && <Footer />}

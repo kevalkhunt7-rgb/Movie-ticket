@@ -5,11 +5,11 @@ import TrailerSection from '../Component/TrailerSection'
 
 const Home = () => {
   return (
-    <>
-  <HeroSection />
-  <FeturedSection />
-  <TrailerSection />
-    </>
+    <main className="w-full overflow-x-hidden">
+      <HeroSection />
+      <FeturedSection />
+      <TrailerSection />
+    </main>
   )
 }
 

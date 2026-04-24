@@ -17,6 +17,7 @@ import showRoutes from "./Routes/showRoutes.js";
 import bookingRoutes from "./Routes/bookingRoutes.js";
 import paymentRoutes from "./Routes/paymentRoutes.js";
 import ticketRoutes from "./Routes/ticketRoutes.js";
+import heroRoutes from "./Routes/heroRoutes.js";
 
 // Load env vars first
 dotenv.config();
@@ -94,6 +95,7 @@ app.use("/api/shows", showRoutes);
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/tickets", ticketRoutes);
+app.use("/api/hero", heroRoutes);
 
 // Health check
 app.get("/api/health", (req, res) => {
